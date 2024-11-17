@@ -1,0 +1,16 @@
+{
+    "_meta": {
+        "topic": "orders"
+    },
+    "id": "faker.number.int()",
+    "user_id": "faker.datatype.uuid()",
+    "amount": "faker.datatype.number()",
+    "delivered": "faker.datatype.boolean()",
+    "created_at": "faker.date.between({ from: '2024-01-01', to: Date.now() })",
+    "timestamp": "faker.date.between('2020-01-01T00:00:00.000Z', '2030-01-01T00:00:00.000Z')",
+    "location": {
+        "latitude": "faker.datatype.number({ max: 90, min: -90})",
+        "longitude": "faker.datatype.number({ max: 180, min: -180})"
+    },
+    "temperature": "faker.datatype.float({ min: 20, max: 95 })"
+}
